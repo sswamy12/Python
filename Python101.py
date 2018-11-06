@@ -82,12 +82,12 @@ for item in fib(10):
 '''
 
 '''
-# Lists
+# Lists - mutable
 mylist = [10,20,30,40,50,60] # Note the square brackets
 for i in mylist:
     print(i)
 
-# Tuples
+# Tuples - immutable
 mytup = (1,2,3,4,5,6,7,8,9,10) # Note the paranthesis
 for i in mytup:
     print(i)
@@ -114,5 +114,15 @@ mylist = [1,2,3,4,5,6,7,8,9,10]
 squares = [i*i for i in mylist]
 print(squares) #Don't forget the parantheses around object for print!
 '''
-    
-    
+ 
+'''   
+# Take input values
+name = input("Enter your name: ")
+print("Hello " + name + "!") 
+'''
+
+int1 = input("Num1: ")
+int2 = input("Num2: ")
+result = float(int1) + float(int2) # without casting, this will print string concatenation!
+print(result)
+

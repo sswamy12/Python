@@ -5,6 +5,8 @@ Created on Nov 5, 2018
 '''
 #from ctypes.test.test_pickling import name
 
+
+
 class Vehicle(object):
     '''
     classdocs
@@ -18,7 +20,8 @@ class Vehicle(object):
     
     def reveal_identity(self):
         print("I am a {}".format(self.name))
-    
+
+# Inherit Make from the Super Class Vehicle
 class Make(Vehicle):
     def __init__(self,parentattr, myattr):
         super(Make,self).__init__(parentattr)
